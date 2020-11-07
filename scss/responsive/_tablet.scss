@@ -1,0 +1,32 @@
+// Tablet => Portrait and Landscape
+@media screen and (mim-width: 768px) and (max-width: 1024px) {
+
+}
+
+// Tablet => Portrait
+@media screen and (min-width: 768px) {
+    .header {
+        grid-template-columns: repeat(3, 1fr);
+    }
+
+    .nav {
+        justify-self: end;
+
+        &__brand {
+            justify-self: start;
+        }
+    }
+
+    .search {
+        justify-self: center;
+    }
+
+    .articles {
+        grid-template-columns: repeat(2, 1fr);
+    }
+}
+
+//Tablet => Landscape
+@media screen and (max-width: 1024px) {
+
+}

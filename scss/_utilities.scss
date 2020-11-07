@@ -1,0 +1,3 @@
+@mixin customShadow($size, $color, $alpha) {
+    box-shadow: -$size $size 0px 0px rgba($color: $color, $alpha: $alpha);
+}
