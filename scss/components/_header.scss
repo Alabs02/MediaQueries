@@ -1,0 +1,73 @@
+.header {
+    display: grid;
+    align-items: center;
+    padding: 1em;
+    background-color: #FAFAFA;
+
+    .nav {
+        &__brand {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            align-content: center;
+
+
+        }
+
+        &__title {
+            font-size: 1.4em;
+            font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+        }
+
+        &__links {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+
+        &__link {
+            padding-left: 1em;
+            font-size: 1.1rem;
+            font-family: Georgia, 'Times New Roman', Times, serif;
+            cursor: pointer;
+            transition: 0.2s ease-out;
+
+            &:hover {
+                text-decoration: underline;
+
+            }
+        }
+
+    }
+}
+
+
+@mixin header--mobile() {
+    .nav {
+        &__brand {
+            padding-bottom: 1em;
+        }
+    }
+}
+
+@mixin header--laptop() {
+    .header {
+        // border: 1px solid red;
+        grid-template-columns: repeat(3, 1fr);
+    }
+    .nav {
+        justify-self: end;
+
+        &__brand {
+            justify-self: start;
+        }
+    }
+
+    .search {
+        justify-self: center;
+    }
+}
+
+@mixin header--desktop() {
+    
+}

@@ -1,0 +1,23 @@
+@import '../components/header';
+@import '../components/searchbar';
+@import '../components/section';
+@import '../components/article';
+
+@media screen and (min-width: 320px) {
+    @include header--mobile();
+    @include search--mobile();
+}
+
+@media screen and (min-width: 768px) {
+    @include header--laptop();
+    @include section--laptop();
+}
+
+@media screen and (min-width: 1224px) {
+    @include section--desktop();
+    
+}
+
+@media screen and (min-width: 1824px) {
+    @include section--desktop-xl();
+}
